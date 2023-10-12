@@ -1261,7 +1261,7 @@ function initSelectionObserver(param: observerParam): listenerHandler {
 
   updateSelection();
 
-  return on('selectionchange', updateSelection);
+  return on('selectionchange', updateSelection, doc);
 }
 
 function initCustomElementObserver({
